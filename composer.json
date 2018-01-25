@@ -1,5 +1,5 @@
 {
-    "name": "Meta Package Lumen",
+    "name": "hanga/pkg_back_meta_package_lumen",
     "description": "Template for Lumen Microservice",
     "keywords": ["metapackage", "lumen", "microservice"],
     "license": "MIT",
