@@ -1,21 +1,36 @@
-# Lumen PHP Framework
+# Template for Lumen Microservice# Lumen PHP Framework
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/lumen-framework/v/unstable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
+## How to install it
+`composer create-project --prefer-dist hanga/pkg_back_meta_package_lumen ms_<MICROSERVICE_NAME>`
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+* `mkdir ms_<MICROSERVICE_NAME>`
+* `composer global require "hanga/pkg_back_meta_package_lumen"`
+* `git init`
+* `git add .`
+* `git commit -m "Initial commit" `
+* `git push -u master`
 
-## Official Documentation
 
-Documentation for the framework can be found on the [Lumen website](http://lumen.laravel.com/docs).
+## Working Tree
+```
+   app/
+    |---- Console/
+        |--- Commands       -> Commands
+    |---- Exceptions        -> Error Handling
+    |---- Http
+        |--- Controllers
+        |--- Middleware     -> MiddleWare
+    |--- Jobs               -> Manage queuable functions
+    |--- Models
+          ├── Business/     -> Contains all the logic
+          ├── DataAccess/
+            ├── Read        -> Contains the functions that read the data
+            ├── Write       -> Contains the functions that write the data
+          ├── Entities/
+            ├── Eloquent    -> Contains the eloquent model
+          ├── Transformers/ -> Defines the output data structure
+    |--- Providers
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Lumen framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+    config/
+    |--- databases.php      -> Contains the 4 empty connections: `persons`, `monitoring`, `core`, `organization`
+```

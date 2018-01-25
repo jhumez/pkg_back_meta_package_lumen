@@ -35,6 +35,6 @@
         ]
     },
     "minimum-stability": "dev",
-    "prefer-stable": false,
+    "prefer-stable": true,
     "optimize-autoloader": true
 }
