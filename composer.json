@@ -1,7 +1,7 @@
 {
-    "name": "laravel/lumen",
-    "description": "The Laravel Lumen Framework.",
-    "keywords": ["framework", "laravel", "lumen"],
+    "name": "Meta Package Lumen",
+    "description": "Template for Lumen Microservice",
+    "keywords": ["metapackage", "lumen", "microservice"],
     "license": "MIT",
     "type": "project",
     "require": {
