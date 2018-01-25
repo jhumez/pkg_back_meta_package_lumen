@@ -8,7 +8,7 @@
 * `git init`
 * `git add .`
 * `git commit -m "Initial commit" `
-* `git push -u master`
+* `git push -u origin master`
 
 
 ## Working Tree
