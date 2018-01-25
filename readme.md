@@ -4,6 +4,7 @@
 `composer create-project --prefer-dist hanga/pkg_back_meta_package_lumen ms_<MICROSERVICE_NAME>`
 
 * `mkdir ms_<MICROSERVICE_NAME>`
+* `cd ms_<MICROSERVICE_NAME>`
 * `composer global require "hanga/pkg_back_meta_package_lumen"`
 * `git init`
 * `git add .`
