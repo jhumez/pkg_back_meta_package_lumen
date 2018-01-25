@@ -1,0 +1,8 @@
+{
+    "name": "hanga/pkg_back_meta_package_lumen",
+    "homepage": "https://github.com/jhumez/pkg_back_meta_package_lumen",
+    "repositories": [
+      { "type": "vcs", "url": "https://github.com/jhumez/pkg_back_meta_package_lumen" }
+    ],
+    "require-all": true
+}
